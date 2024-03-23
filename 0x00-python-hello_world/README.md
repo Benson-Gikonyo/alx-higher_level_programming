@@ -22,3 +22,9 @@ Task 5: Complete this source code in order to print 3 times a string stored in t
 
 
 Task 6: Complete this source code to print Welcome to Holberton School! using both str1 and 2
+
+Task 7: Complete this source code
+    word_first_3 should contain the first 3 letters of the variable word
+    word_last_2 should contain the last 2 letters of the variable word
+    middle_word should contain the value of the variable word without the first and last letters
+
