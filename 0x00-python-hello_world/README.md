@@ -29,3 +29,8 @@ Task 7: Complete the given source code
     middle_word should contain the value of the variable word without the first and last letters
 
 Task 8: Complete the given source code to print object-oriented programming with Python, followed by a new line.
+
+
+Task 9: Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+
+    Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
