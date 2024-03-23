@@ -19,3 +19,6 @@ Task 4: Complete the source code in order to print the float stored in the varia
 Task 5: Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
     You are not allowed to use any loops or conditional statement
     Your program should be maximum 5 lines long
+
+
+Task 6: Complete this source code to print Welcome to Holberton School! using both str1 and 2
