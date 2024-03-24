@@ -7,3 +7,5 @@ Task 1: Complete the source code in order to print the last digit of the number 
 Task 2: Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line. Use only onr loop, and only one print function.
 
 Task 3: Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line. As with Task 2. Print all the letters except q and e.
+
+Task 4: Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal , as in task 2
