@@ -16,3 +16,7 @@ Task 6: Write a program that prints all possible different combinations of two d
 
 Task 7:Write a function that checks for lowercase character.
     Prototype: def islower(c):
+
+Task 8: Write a function that prints a string in uppercase followed by a new line.
+
+    Prototype: def uppercase(str):
