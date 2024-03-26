@@ -20,3 +20,10 @@ Task 7:Write a function that checks for lowercase character.
 Task 8: Write a function that prints a string in uppercase followed by a new line.
 
     Prototype: def uppercase(str):
+
+
+Task 9: Write a function that prints the last digit of a number.
+
+    Prototype: def print_last_digit(number):
+    Returns the value of the last digit
+    You are not allowed to import any module
