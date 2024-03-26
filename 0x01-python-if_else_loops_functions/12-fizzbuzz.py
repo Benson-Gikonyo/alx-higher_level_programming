@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 def fizzbuzz():
     """fizz buzz test
     Return: nothing.
