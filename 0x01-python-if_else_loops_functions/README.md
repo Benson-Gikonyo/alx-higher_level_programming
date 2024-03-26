@@ -31,3 +31,8 @@ Task 9: Write a function that prints the last digit of a number.
 Task 10: Write a function that adds two integers and returns the result.
 
     Prototype: def add(a, b):
+
+Task 11: Write a function that computes a to the power of b and return the value.
+
+    Prototype: def pow(a, b):
+    Returns the value of a ^ b
