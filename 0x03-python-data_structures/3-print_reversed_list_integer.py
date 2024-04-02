@@ -6,7 +6,6 @@ def print_reversed_list_integer(my_list=[]):
         my_list (list):contains intergers.
     Return: nothing.
     """
-    rev_list = my_list.copy()
 
-    for num in range(len(rev_list)-1, -1, -1):
-        print("{}".format(rev_list[num]))
+    for num in range(len(my_list)-1, -1, -1):
+        print("{:d}".format(my_list[num]))
