@@ -17,15 +17,15 @@ if __name__ == "__main__":
     else:
         a = int(sys.argv[1])
         b = int(sys.argv[3])
-        
+
         if sys.argv[2] == "+":
             print(f"{a} {sys.argv[2]} {b} = {add(a, b)}")
-    
+
         if sys.argv[2] == "-":
             print(f"{a} {sys.argv[2]} {b} = {sub(a, b)}")
-        
+
         if sys.argv[2] == "*":
             print(f"{a} {sys.argv[2]} {b} = {mul(a, b)}")
-        
+
         if sys.argv[2] == "/":
             print(f"{a} {sys.argv[2]} {b} = {div(a, b)}")
