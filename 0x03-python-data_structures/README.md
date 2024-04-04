@@ -15,3 +15,5 @@ Task 5: Write a function that removes all characters c and C from a string.
 Task 6: Write a function that prints a matrix of integers.
 
 Task 7: Write a function that adds 2 tuples.
+
+Task 8: Write a function that returns a tuple with the length of a string and its first character.
