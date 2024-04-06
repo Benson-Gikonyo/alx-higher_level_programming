@@ -9,9 +9,10 @@ def common_elements(set_1, set_2):
 
     return: set with common elements
     """
+    empty = set()
     if not set_1 or len(set_1) == 0:
-        return None
+        return empty
     if not set_2 or len(set_2) == 0:
-        return None
+        return empty
 
     return set_1 & set_2
