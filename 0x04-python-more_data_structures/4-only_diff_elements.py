@@ -9,10 +9,9 @@ def only_diff_elements(set_1, set_2):
 
     return : set difference
     """
-    empty = set()
     if not set_1 or len(set_1) == 0:
-        return empty
+        return set_2
     if not set_2 or len(set_2) == 0:
-        return empty
+        return set_1
 
     return set_1 ^ set_2
