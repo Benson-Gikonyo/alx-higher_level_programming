@@ -14,7 +14,9 @@ def square_matrix_simple(matrix=[]):
     new_matrix = []
     new_row = []
     for row in matrix:
-        new_row = list(map(lambda x: x**2, row))
+        # new_row = list(map(lambda x: x**2, row)) - lambda way
+        # list comprehension way -- waaay simpler!
+        new_row = [num ** 2 for num in row] 
         new_matrix.append(new_row)
-
+    
     return new_matrix
