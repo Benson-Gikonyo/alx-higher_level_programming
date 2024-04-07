@@ -8,9 +8,6 @@ def multiply_by_2(a_dictionary):
 
     return: dictionary with values X 2
     """
-    if not a_dictionary:
-        return None
-
     new_dict = a_dictionary.copy()
 
     for key, value in new_dict.items():
