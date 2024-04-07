@@ -10,9 +10,6 @@ def update_dictionary(a_dictionary, key, value):
 
     return: updated dictionary
     """
-    if (not a_dictionary) or (len(a_dictionary) == 0):
-        a_dictionary = dict(key, value)
-
     if (key in a_dictionary.keys()) or (key not in a_dictionary.keys()):
         a_dictionary[key] = value
 
