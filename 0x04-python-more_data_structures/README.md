@@ -27,3 +27,5 @@ Task 11: Write a function that returns a list with all values multiplied by a nu
 Task 13: Write a function that returns the weighted average of all integers tuple (score, weight)
 
 Task 14: Write a function that computes the square value of all integers of a matrix using map
+
+Task 15: Write a function that deletes keys with a specific value in a dictionary.
