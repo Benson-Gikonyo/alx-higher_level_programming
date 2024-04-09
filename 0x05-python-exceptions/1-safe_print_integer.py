@@ -10,7 +10,7 @@ def safe_print_integer(value):
         False if the value is not printed(not an int)
     """
     try:
-        if type(value) is int:
+        if isinstance(value, int):
             print("{:d}".format(value))
             return True
         else:
