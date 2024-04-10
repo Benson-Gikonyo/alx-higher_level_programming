@@ -17,7 +17,7 @@ def safe_print_list_integers(my_list=[], x=0):
                 int_printed += 1
 
     except Exception:
-        pass
+        traceback.print_exc()
 
     print()
     return int_printed
