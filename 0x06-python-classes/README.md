@@ -10,3 +10,4 @@ Task 3: Write a class Square that defines a square by: (based on Task 2)
 
 Task 4: Write a class Square that defines a square by: (based on Task 3)
 
+Task 5: Write a class Square that defines a square by: (based on 4-square.py)
