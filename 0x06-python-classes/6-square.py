@@ -60,24 +60,25 @@ class Square():
             raise TypeError("position must be a tuple of 2 positive integers")
 
         # check for nested tuples
-        if any(type(value[idx]) is tuple for idx in value):
+        elif any(type(value[idx]) is tuple for idx in value):
             raise TypeError("position must be a tuple of 2 positive integers")
 
         # check for number of elements
         # or (len(value[idx]) for idx in value)
-        if (len(value) > 2):
+        elif (len(value) > 2):
             raise TypeError("position must be a tuple of 2 positive integers")
 
         # check for type of elements
-        if (type(value[0]) is not int) or (type(value[1]) is not int):
+        elif (type(value[0]) is not int) or (type(value[1]) is not int):
 
             raise TypeError("position must be a tuple of 2 positive integers")
 
         # check if values are +ve intergers
-        if (value[0] < 0) or (value[1] < 0):
+        elif (value[0] < 0) or (value[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
 
-        self.position = tuple(value)
+        else:
+            self.position = tuple(value)
 
     def area(self):
         """calculates area of square
