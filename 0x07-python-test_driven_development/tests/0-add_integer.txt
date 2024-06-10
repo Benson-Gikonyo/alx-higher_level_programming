@@ -1,0 +1,62 @@
+The ``0-add_integer`` module
+============================
+This module has the function ``add_integer(a, b=98)``.
+
+``add_integer`` function
+===============================
+This function returns the sum of 2 arguments. 
+
+Importing function from the module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Adding two intergers - positive 
+    >>> add_integer(4, 5)
+    9
+
+negative integers
+    >>> add_integer(-4, -5)
+    -9
+
+Adding with one interger (b is given to be 98) 
+    >>> add_integer(3)
+    101
+
+negative interger
+    >>> add_integer(-3)
+    95
+
+Adding with floating point values - positive values
+    >>> add_integer(4.0, 5.0)
+    9
+
+negative values
+    >>> add_integer(-4.0, -5.0)
+    -9
+
+Adding with single floating point values - positive 
+    >>> add_integer(4.0)
+    102
+
+negative values
+    >>> add_integer(-4.0)
+    94
+
+Adding an integer and  string (b is a string)
+    >>> add_integer(4, "Str")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+Adding an integer and  string (a is a string)
+    >>> add_integer("Str", 4)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Adding NaN
+    >>> add_integer (float(NaN))
+    Traceback (most recent call last):
+    NameError: name 'NaN' is not defined
+
+Adding None
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
