@@ -11,7 +11,7 @@ Importing function from the module:
 
 Testing for first_name string only:
     >>> say_my_name("Benson")
-    My name is Benson
+    My name is Benson 
 
 Testing for first_name string, last name string:
     >>> say_my_name("Benson", "Gikonyo")
