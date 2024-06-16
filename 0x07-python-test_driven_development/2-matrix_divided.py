@@ -20,9 +20,8 @@ def matrix_divided(matrix, div):
     elif div == 0:
         raise ZeroDivisionError("division by zero")
 
-    if not (all(isinstance(row, list) and \
-        all(isinstance(num, (int, float)) for num in row) for row in matrix)) or \
-            matrix == None:
+    if not all(isinstance(row, list) and \
+        all(isinstance(num, (int, float)) for num in row) for row in matrix):
         raise TypeError("matrix must be a matrix " +
                         "(list of lists) " + "of integers/floats")
 
