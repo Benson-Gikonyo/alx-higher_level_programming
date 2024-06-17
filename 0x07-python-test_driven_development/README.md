@@ -11,3 +11,7 @@ Task 1: Write a function that divides all elements of a matrix.
 Task 2: Write a function that prints My name is <first name> <last name>
 
     Prototype: def say_my_name(first_name, last_name=""):
+
+Task 3: Write a function that prints a square with the character #.
+
+    Prototype: def print_square(size):
