@@ -54,3 +54,9 @@ Task 10: Write a script that computes and prints a factorial
     Factorial of NaN is 1
     You must do it recursively
     You must use a function
+
+Task 11: Write a script that searches the second biggest integer in the list of arguments.
+
+    You can assume all arguments can be converted to integer
+    If no argument passed, print 0
+    If the number of arguments is 1, print 0
