@@ -1,0 +1,20 @@
+The ``5-text_indentation`` module
+===============================
+This module has the function ``text_indentation(text)``.
+
+``text_indentation`` function
+===============================
+This function prints a text with 2 new lines after each of these characters: ., ? and :
+
+Importing function from the module:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Testing for text being a non-string type:
+    >>> text_indentation(202022)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Testing for missing text:
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'

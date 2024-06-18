@@ -15,3 +15,7 @@ Task 2: Write a function that prints My name is <first name> <last name>
 Task 3: Write a function that prints a square with the character #.
 
     Prototype: def print_square(size):
+
+Task 4: Write a function that prints a text with 2 new lines after each of these characters: ., ? and :
+
+    Prototype: def text_indentation(text):
