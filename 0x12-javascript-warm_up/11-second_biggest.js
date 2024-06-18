@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const argArr = [];
+let argArr = [];
 const len = process.argv.length;
 
 if (len === 2 || len === 3) {
