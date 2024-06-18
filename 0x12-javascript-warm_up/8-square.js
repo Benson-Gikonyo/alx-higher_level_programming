@@ -10,7 +10,11 @@ if (isNaN(size)) {
     for (let wid = 0; wid < size; wid++) {
       square += 'X';
     }
-    square += '\n';
+    if (len === size - 1) {
+      continue;
+    } else {
+      square += '\n';
+    }
   }
 }
 console.log(square);
