@@ -21,3 +21,6 @@ Task 3: Write a script that prints the first argument passed to it:
 
 Task 4: Write a script that prints two arguments passed to it, in the following format: “ is ”
 
+Task 5: Write a script that prints My number: <first argument converted in integer> if the first argument can be converted to an integer:
+
+    If the argument can’t be converted to an integer, print “Not a number”
