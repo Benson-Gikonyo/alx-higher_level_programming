@@ -60,3 +60,9 @@ Task 11: Write a script that searches the second biggest integer in the list of 
     You can assume all arguments can be converted to integer
     If no argument passed, print 0
     If the number of arguments is 1, print 0
+
+
+Task 13: Write a function that returns the addition of 2 integers.
+
+    The function must be visible from outside
+    The name of the function must be add
