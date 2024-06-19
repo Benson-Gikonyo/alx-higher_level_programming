@@ -10,8 +10,6 @@ if (len === 2 || len === 3) {
     argArr.push(Number(process.argv[idx]));
   }
 
-  console.log(argArr);
-
   argArr.sort((a, b) => b - a);
 
   console.log(argArr[1]);
