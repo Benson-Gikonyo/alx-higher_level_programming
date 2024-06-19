@@ -12,7 +12,7 @@ if (len === 2 || len === 3) {
 
   console.log(argArr);
 
-  argArr.sort(function (a, b) { return b - a; });
+  argArr.sort((a, b) => b - a);
 
   console.log(argArr[1]);
 }
