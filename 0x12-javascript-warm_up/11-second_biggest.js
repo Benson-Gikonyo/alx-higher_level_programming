@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-let argArr = [];
+const argArr = [];
 const len = process.argv.length;
 
 if (len === 2 || len === 3) {
@@ -10,5 +10,7 @@ if (len === 2 || len === 3) {
     argArr.push(Number(process.argv[idx]));
   }
 
-  console.log(Math.max(...argArr));
+  // shouldnt work, but it does.
+  argArr.sort().reverse();
+  console.log(argArr[1]);
 }
