@@ -10,7 +10,9 @@ if (len === 2 || len === 3) {
     argArr.push(Number(process.argv[idx]));
   }
 
-  // shouldnt work, but it does.
-  argArr.sort().reverse();
+  console.log(argArr);
+
+  argArr.sort(function (a, b) { return b - a; });
+
   console.log(argArr[1]);
 }
