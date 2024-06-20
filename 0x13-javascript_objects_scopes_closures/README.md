@@ -16,3 +16,5 @@ Task 2: Write a class Rectangle that defines a rectangle:
     Initialize the instance attribute width with the value of w
     Initialize the instance attribute height with the value of h
     If w or h is equal to 0 or not a positive integer, create an empty object
+
+Task3: like task 2, but Create an instance method called print() that prints the rectangle using the character X
