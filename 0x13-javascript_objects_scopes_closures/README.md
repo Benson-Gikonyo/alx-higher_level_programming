@@ -18,3 +18,7 @@ Task 2: Write a class Rectangle that defines a rectangle:
     If w or h is equal to 0 or not a positive integer, create an empty object
 
 Task3: like task 2, but Create an instance method called print() that prints the rectangle using the character X
+
+Task 4: Like Task 3 with the following additions:
+    Create an instance method called rotate() that exchanges the width and the height of the rectangle
+    Create an instance method called double() that multiples the width and the height of the rectangle by 2
