@@ -28,5 +28,3 @@ def text_indentation(text):
             print("\n")
         else:
             print(strip_text[idx], end='')
-
-    print("\n")
