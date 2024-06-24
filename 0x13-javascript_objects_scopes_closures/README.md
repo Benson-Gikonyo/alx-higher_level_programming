@@ -57,3 +57,6 @@ Task 10: Write a function that converts a number from base 10 to another base pa
     Prototype: exports.converter = function (base)
     You are not allowed to import any file
     You are not allowed to declare any new variable (var, let, etc..)
+
+Task 11: Write a script that imports an array and computes a new array.
+    You must use a map.
