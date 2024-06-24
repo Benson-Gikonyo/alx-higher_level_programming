@@ -36,3 +36,7 @@ Task 6: Write a class Square that defines a square and inherits from Square of 5
     Create an instance method called charPrint(c) that prints the rectangle using the character c
         If c is undefined, use the character X
 
+
+Task 7: Write a function that returns the number of occurrences in a list:
+
+    Prototype: exports.nbOccurences = function (list, searchElement)
