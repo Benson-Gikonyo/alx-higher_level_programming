@@ -52,3 +52,8 @@ Task 9: Write a function that prints the number of arguments already printed and
     Prototype: exports.logMe = function (item)
     Output format: <number arguments already printed>: <current argument value>
 
+Task 10: Write a function that converts a number from base 10 to another base passed as argument:
+
+    Prototype: exports.converter = function (base)
+    You are not allowed to import any file
+    You are not allowed to declare any new variable (var, let, etc..)
