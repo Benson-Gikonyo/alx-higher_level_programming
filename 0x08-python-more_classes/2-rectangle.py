@@ -6,12 +6,12 @@ A class Rectangle that defines a rectangle.
 
 class Rectangle():
     """class that defines a rectangle based on 2-rectangle.py
-    
+
         Attributes:
             width (int): width of rectangle
             height (int): height of rectangle
     """
-      __width = None
+    __width = None
     __height = None
 
     def __init__(self, width=0, height=0):
@@ -43,3 +43,13 @@ class Rectangle():
             raise ValueError("height must be >= 0")
 
         self.__height = value
+
+    def area(self):
+        return self.__height * self.__width
+
+    def perimeter(self):
+        perimeter = 0
+        if self.__width == 0 or self.__height == 0:
+            return perimeter
+        else:
+            return (self.__height + self.__width) * 2
