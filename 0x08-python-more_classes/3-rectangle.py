@@ -5,7 +5,7 @@ A class Rectangle that defines a rectangle.
 
 
 class Rectangle():
-    """class that defines a rectangle based on 1-rectangle.py
+    """class that defines a rectangle based on 2-rectangle.py
 
         Attributes:
             width (int): width of rectangle
@@ -82,3 +82,18 @@ class Rectangle():
             return perimeter
         else:
             return (self.__height + self.__width) * 2
+
+    def __str__(self):
+        """returns a printable 'diagram' of the rectangle
+        with the '#' character
+        """
+        rect = ""
+        if self.__width == 0 or self.__height == 0:
+            return rect
+
+        for num in range(0, self.__height):
+            for num2 in range(0, self.__width):
+                rect += "#"
+            rect += "\n"
+
+        return rect
