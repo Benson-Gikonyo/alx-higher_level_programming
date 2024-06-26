@@ -94,6 +94,9 @@ class Rectangle():
         for num in range(0, self.__height):
             for num2 in range(0, self.__width):
                 rect += "#"
-            rect += "\n"
+            if num == self.__height - 1:
+                continue
+            else:
+                rect += "\n"
 
         return rect
