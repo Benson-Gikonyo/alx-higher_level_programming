@@ -15,6 +15,7 @@ def text_indentation(text):
 
     if not isinstance(text, str):
         raise TypeError("text must be a string")
+        print("Fail")
 
     if text is None:
         raise TypeError("text_indentation() missing 1 \
@@ -24,7 +25,7 @@ def text_indentation(text):
     chars = ['.', ':', '?']
 
     for idx in range(0, len(strip_text)):
-        if strip_text[idx - 1] in chars:
+        if strip_text[idx - 1] in chars and strip_text[idx] == " ":
             print("\n")
         else:
             print(strip_text[idx], end='')
