@@ -19,4 +19,12 @@ Task 2:Write a class Rectangle that defines a rectangle by: (based on 1-rectangl
     Instantiation with optional width and height: def __init__(self, width=0, height=0):
     Public instance method: def area(self): that returns the rectangle area
     Public instance method: def perimeter(self): that returns the rectangle perimeter.
-      
+
+Task 3: Write a class Rectangle that defines a rectangle by: (based on 2-rectangle.py)
+
+    Public instance method: def area(self): that returns the rectangle area
+    Public instance method: def perimeter(self): that returns the rectangle perimeter:
+
+    if width or height is equal to 0, perimeter is equal to 0
+
+You are not allowed to import any module

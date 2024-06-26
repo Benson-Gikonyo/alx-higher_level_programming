@@ -1,37 +1,22 @@
 #!/usr/bin/python3
-"""
+""" 
 A class Rectangle that defines a rectangle.
 """
 
 
 class Rectangle():
+    """class that defines a rectangle based on 2-rectangle.py
+    
+        Attributes:
+            width (int): width of rectangle
+            height (int): height of rectangle
     """
-    defines a rectangle based on 0-rectangle.py
-
-    Attributes:
-        width (int): width of rectangle
-        height (int): height of rectangle
-    """
-    __width = None
+      __width = None
     __height = None
 
     def __init__(self, width=0, height=0):
-        self.__width = 0
-        self.__height = 0
-        
-        if not isinstance(width, int):
-            raise TypeError("width must be an integer")
-        elif width < 0:
-            raise ValueError("width must be >= 0")
-        else:
-            self.__width = width
-            
-        if not isinstance(height, int):
-            raise TypeError("width must be an integer")
-        elif height < 0:
-            raise ValueError("width must be >= 0")
-        else:
-            self.__height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
