@@ -100,3 +100,11 @@ class Rectangle():
                 rect += "\n"
 
         return rect
+
+    def repr(self):
+        """ return a string representation of the rectangle
+        """
+        rect_str = "Rectangle(" + str(self.__width) + ", " + \
+            str(self.__height) + ")"
+
+        return rect_str
