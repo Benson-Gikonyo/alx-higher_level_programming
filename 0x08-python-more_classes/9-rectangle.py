@@ -157,8 +157,10 @@ class Rectangle():
         """returns a new Rectangle instance with width == height == size
 
         Args:
-            size (int): size of square 
+            size (int): size of square
 
         return: instance of rectangle
         """
-        return cls(size, size)
+        sq = Rectangle(size, size)
+        
+        return sq
