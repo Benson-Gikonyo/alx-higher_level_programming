@@ -34,3 +34,10 @@ Task 4: Write a class Rectangle that defines a rectangle by: (based on 3-rectang
 
 Task 5: Write a class Rectangle that defines a rectangle by: (based on 4-rectangle.py)
     Print the message Bye rectangle... (... being 3 dots not ellipsis) when an instance of Rectangle is deleted
+
+Task 6: Write a class Rectangle that defines a rectangle by: (based on 5-rectangle.py)
+    Public class attribute number_of_instances:
+        Initialized to 0
+        Incremented during each new instance instantiation
+        Decremented during each instance deletion
+
