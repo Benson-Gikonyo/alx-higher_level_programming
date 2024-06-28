@@ -101,7 +101,7 @@ class Rectangle():
 
         return rect
 
-    def repr(self):
+    def __repr__(self):
         """ return a string representation of the rectangle
         """
         rect_str = "Rectangle(" + str(self.__width) + ", " + \
