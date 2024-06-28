@@ -41,3 +41,9 @@ Task 6: Write a class Rectangle that defines a rectangle by: (based on 5-rectang
         Incremented during each new instance instantiation
         Decremented during each instance deletion
 
+
+Task 7: Write a class Rectangle that defines a rectangle by: (based on 6-rectangle.py)
+    Public class attribute print_symbol:
+    Initialized to #
+    Used as symbol for string representation
+    Can be any type
