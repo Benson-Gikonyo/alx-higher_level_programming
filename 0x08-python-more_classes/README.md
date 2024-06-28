@@ -28,3 +28,9 @@ Task 3: Write a class Rectangle that defines a rectangle by: (based on 2-rectang
     if width or height is equal to 0, perimeter is equal to 0
 
 You are not allowed to import any module
+
+Task 4: Write a class Rectangle that defines a rectangle by: (based on 3-rectangle.py)
+    repr() should return a string representation of the rectangle to be able to recreate a new instance by using eval()
+
+Task 5: Write a class Rectangle that defines a rectangle by: (based on 4-rectangle.py)
+    Print the message Bye rectangle... (... being 3 dots not ellipsis) when an instance of Rectangle is deleted

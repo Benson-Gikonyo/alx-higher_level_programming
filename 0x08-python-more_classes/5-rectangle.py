@@ -108,3 +108,9 @@ class Rectangle():
             str(self.__height) + ")"
 
         return rect_str
+
+    def __del__(self):
+        """prints a string and deletes an object
+        """
+        print("Bye rectangle...")
+        del self
