@@ -15,9 +15,9 @@ if __name__ == "__main__":
         port=3306
     )
     db_cursor = db_connection.cursor()
-    db_cursor.execute('SELECT * FROM states ORDER BY states.id ASC')
-
+    db_cursor.execute('SELECT * FROM states')
     rows = db_cursor.fetchall()
+    
     for row in rows:
         print(row)
 
