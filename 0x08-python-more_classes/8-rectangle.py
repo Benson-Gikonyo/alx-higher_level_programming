@@ -131,9 +131,9 @@ class Rectangle():
 
         area1 = rect_1.area()
         area2 = rect_2.area()
-        bigger = None
+        bigger = area1
         if area1 == area2:
-            return rect_1
+            return bigger
         else:
             bigger = max(area1, area2)
 
