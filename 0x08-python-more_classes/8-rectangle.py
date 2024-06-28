@@ -135,6 +135,6 @@ class Rectangle():
         if area1 == area2:
             return rect_1
         else:
-            bigger = max(area2, area1)
+            bigger = max(area1, area2)
 
         return bigger
