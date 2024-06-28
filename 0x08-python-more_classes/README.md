@@ -51,3 +51,7 @@ Task 7: Write a class Rectangle that defines a rectangle by: (based on 6-rectang
 
 Task 8: Write a class Rectangle that defines a rectangle by: (based on 7-rectangle.py)
     Static method def bigger_or_equal(rect_1, rect_2): that returns the biggest rectangle based on the area
+
+Task 9: Write a class Rectangle that defines a rectangle by: (based on 8-rectangle.py)
+
+    Class method def square(cls, size=0): that returns a new Rectangle instance with width == height == size
