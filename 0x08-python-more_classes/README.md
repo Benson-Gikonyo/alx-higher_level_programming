@@ -47,3 +47,7 @@ Task 7: Write a class Rectangle that defines a rectangle by: (based on 6-rectang
     Initialized to #
     Used as symbol for string representation
     Can be any type
+
+
+Task 8: Write a class Rectangle that defines a rectangle by: (based on 7-rectangle.py)
+    Static method def bigger_or_equal(rect_1, rect_2): that returns the biggest rectangle based on the area
