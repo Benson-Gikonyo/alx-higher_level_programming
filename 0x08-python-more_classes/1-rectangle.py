@@ -16,8 +16,26 @@ class Rectangle():
     __height = None
 
     def __init__(self, width=0, height=0):
-        self.__width = 0
-        self.__height = 0
+        """ Initialize the newly created object after
+        instantiation with newly created objects
+
+        Args:
+            width (int): rectangle width. Defaults to 0.
+            height (int): rectangle height. Defaults to 0.
+        """
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        elif width < 0:
+           raise ValueError("width must be >= 0")
+        else:
+            self.__width = 0
+
+        if type(height) is not int:
+            raise TypeError("height must be an integer")
+        elif height < 0:
+           raise ValueError("height must be >= 0")
+        else:
+            self.__height = 0
 
     @property
     def width(self):
