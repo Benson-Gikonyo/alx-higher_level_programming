@@ -8,3 +8,4 @@ Task 3: Write a function that returns True if the object is an instance of, or i
 
 Task 4: Write a function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False.
 
+Task 5: Write an empty class BaseGeometry.
