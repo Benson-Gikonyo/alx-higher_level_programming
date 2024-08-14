@@ -22,3 +22,7 @@ Testing for list of negative ints:
     >>> my_list.extend([-2, 3, -4, 5])
     >>> my_list.print_sorted()
     [-4, -2, -1, 1, 2, 3, 3, 4, 5, 5]
+
+check return value:
+    Assert (my_list.print_sorted())
+    
