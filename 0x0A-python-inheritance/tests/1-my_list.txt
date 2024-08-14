@@ -7,8 +7,18 @@ Testing for empty list:
     >>> my_list.print_sorted()
     []
 
+check for str():
+    >>> print(str(my_list))
+    []
+
 Testing for list of ints:
     >>> my_list.append(1)
     >>> my_list.extend([2, 3, 4, 5])
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5]
+
+Testing for list of negative ints:
+    >>> my_list.append(-1)
+    >>> my_list.extend([-2, 3, -4, 5])
+    >>> my_list.print_sorted()
+    [-4, -2, -1, 1, 2, 3, 3, 4, 5, 5]
