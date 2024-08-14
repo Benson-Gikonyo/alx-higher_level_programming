@@ -30,3 +30,8 @@ Task 8: Write a class Rectangle that inherits from BaseGeometry (7-base_geometry
         width and height must be private. No getter or setter
         width and height must be positive integers, validated by integer_validator
 
+Task 9: Write a class Rectangle that inherits from BaseGeometry  8-rectangle.py)
+
+    the area() method must be implemented
+    print() should print, and str() should return, the following rectangle description: [Rectangle] <width>/<height>
+
