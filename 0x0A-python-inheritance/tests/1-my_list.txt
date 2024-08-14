@@ -24,5 +24,9 @@ Testing for list of negative ints:
     [-4, -2, -1, 1, 2, 3, 3, 4, 5, 5]
 
 check return value:
-    Assert (my_list.print_sorted())
+    >>> value = my_list.print_sorted()
+    [-4, -2, -1, 1, 2, 3, 3, 4, 5, 5]
+
+    >>> type(value) is list
+    False
     
