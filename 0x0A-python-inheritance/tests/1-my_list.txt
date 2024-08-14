@@ -1,0 +1,14 @@
+Importing function from module
+>>> MyList = __import__('1-my_list').MyList
+
+>>> my_list = MyList()
+
+Testing for empty list:
+    >>> my_list.print_sorted()
+    []
+
+Testing for list of ints:
+    >>> my_list.append(1)
+    >>> my_list.extend([2, 3, 4, 5])
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
