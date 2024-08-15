@@ -44,3 +44,7 @@ Task 10: Write a class Square that inherits from Rectangle (9-rectangle.py):
 task 11: Write a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py).
 
     print() should print, and str() should return, the square description: [Square] <width>/<height>
+
+Task 12: Write a class MyInt that inherits from int:
+
+    MyInt is a rebel. MyInt has == and != operators inverted
