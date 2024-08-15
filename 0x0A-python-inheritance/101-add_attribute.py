@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" defines add attribute function"""
 
 def add_attribute(obj, attribute, value):
     """ check if an object has attributes, and if so,
