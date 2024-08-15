@@ -15,22 +15,23 @@ def matrix_divided(matrix, div):
         new matrix of elements, to 2 decimal places.
     """
 
-    if (not isinstance(div, (int, float))) or div == None:
+    if (not isinstance(div, (int, float))) or div is None:
         raise TypeError("div must be a number")
     elif div == 0:
         raise ZeroDivisionError("division by zero")
 
-    if not all(isinstance(row, list) and \
-        all(isinstance(num, (int, float)) for num in row) for row in matrix):
+    if not all(isinstance(row, list) and
+               all(isinstance(num, (int, float))
+                   for num in row) for row in matrix):
         raise TypeError("matrix must be a matrix " +
                         "(list of lists) " + "of integers/floats")
 
     # set num and div to 10 for any nan or infinite value
 
-    clean_matrix = [[10 if num == float('inf') or \
-        num ==  float('-inf') or \
-            num != num else num for num in row] for row in matrix]
-    
+    clean_matrix = [[10 if num == float('inf') or
+                     num == float('-inf') or
+                     num != num else num for num in row] for row in matrix]
+
     if div == float('inf') or div == float('-inf') or div != div:
         div = 10
 
