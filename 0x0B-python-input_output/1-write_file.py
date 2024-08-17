@@ -1,4 +1,4 @@
-#!/usr/python3
+#!/usr/bin/python3
 """ defines write_file function which writes to a file."""
 
 
