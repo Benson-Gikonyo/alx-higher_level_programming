@@ -17,3 +17,6 @@ Task 3: Write a function that returns the JSON representation of an object (stri
 
     Prototype: def to_json_string(my_obj)
 
+Task 4: Write a function that returns an object (Python data structure) represented by a JSON string:
+
+    Prototype: def from_json_string(my_str):
