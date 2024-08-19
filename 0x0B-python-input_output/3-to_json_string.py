@@ -2,9 +2,10 @@
 """ defines the to_json_string function """
 
 
-def to_json_string(my_obj):
-    import json
+import json
 
+
+def to_json_string(my_obj):
     """ returns the JSON representation of an object (string)
 
     Args:
