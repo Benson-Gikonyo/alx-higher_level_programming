@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """ define  append_after() function"""
 
-import sys
-
 
 def append_after(filename="", search_string="", new_string=""):
     """inserts a line of text to a file,
