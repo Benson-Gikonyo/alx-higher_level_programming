@@ -13,8 +13,6 @@ def save_to_json_file(my_obj, filename):
         filename : file to save the thing in
     """
 
-    j_string = json.dumps(my_obj)
-
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(j_string)
+    with open(filename, "w") as f:
+        json.dump(my_obj, f)
         f.close()
