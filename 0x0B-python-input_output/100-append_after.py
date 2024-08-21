@@ -15,12 +15,10 @@ def append_after(filename="", search_string="", new_string=""):
     """
 
     text = ""
-    with open(filename, 'r') as f:
-        f_line = f.readline()
-        while f_line != "":
-            text += f_line
-            if search_string in f_line:
+    with open(filename) as f:
+        for line in f:
+            text += line
+            if search_string in line:
                 text += new_string
-            f_line = f.readline()
-    with open(filename, 'w') as f:
+    with open(filename, "w") as f:
         f.write(text)
