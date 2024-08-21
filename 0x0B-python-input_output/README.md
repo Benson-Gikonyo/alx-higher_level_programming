@@ -55,4 +55,8 @@ Task 11:Public method def to_json(self, attrs=None): that retrieves a dictionary
 
     Public method def reload_from_json(self, json): that replaces all attributes of the Student instance
 
-Task 12: Create a function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n:
+Task 12: Create a function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n
+
+Task 13: Write a function that inserts a line of text to a file, after each line containing a specific string (see example):
+
+    Prototype: def append_after(filename="", search_string="", new_string="")
