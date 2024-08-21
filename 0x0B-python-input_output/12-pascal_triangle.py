@@ -8,12 +8,12 @@ def pascal_triangle(n):
 
     Args:
         n (int): size of triangle
-    
+
     Return: list
     """
     if n < 1:
         return []
-    
+
     triangle = [[1]]
     while len(triangle) != n:
         tri = triangle[-1]
