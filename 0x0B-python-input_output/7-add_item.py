@@ -14,12 +14,10 @@ def add_item():
     Return: add_item.json 
     """
 
-    filename = "add_item.json"
-
     try:
-        lst = load_from_json_file(filename)
+        lst = load_from_json_file("add_item.json")
     except FileNotFoundError:
         lst = []
 
     lst. extend(sys.argv[1:])
-    save_to_json_file(lst, filename)
+    save_to_json_file(lst, "add_item.json")
