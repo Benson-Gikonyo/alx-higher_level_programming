@@ -53,4 +53,6 @@ Task 10: Write a class Student that defines a student by: (based on 9-student.py
 
 Task 11:Public method def to_json(self, attrs=None): that retrieves a dictionary representation of a Student instance (same as 10-class_to_json.py):
 
-    Public method def reload_from_json(self, json): that replaces all attributes of the Student instance: 
+    Public method def reload_from_json(self, json): that replaces all attributes of the Student instance
+
+Task 12: Create a function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n:
