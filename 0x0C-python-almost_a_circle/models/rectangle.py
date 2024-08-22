@@ -113,9 +113,7 @@ class Rectangle(Base):
 
     def area(self):
         """returns area of rectangle
-        
+
         Return: area
         """
         return self.__width * self.__height
-    
-    
