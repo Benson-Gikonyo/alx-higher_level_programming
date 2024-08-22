@@ -11,12 +11,20 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ initiate Rectagle class
+        """ initiate Rectangle class
         """
+        self.validate_wh(width, "width")
         self.__width = width
+
+        self.validate_wh(height, "height")
         self.__height = height
+
+        self.validate_xy(x, "x")
         self.__x = x
+
+        self.validate_xy(y, "y")
         self.__y = y
+
         super().__init__(id)
 
     @property
@@ -29,6 +37,7 @@ class Rectangle(Base):
 
     @width.setter
     def set_width(self, value):
+        self.validate_wh(value, "width")
         self.__width = value
 
     @property
@@ -41,6 +50,7 @@ class Rectangle(Base):
 
     @height.setter
     def set_height(self, value):
+        self.validate_wh(value, "height")
         self.__height = value
 
     @property
@@ -53,6 +63,7 @@ class Rectangle(Base):
 
     @x.setter
     def set_x(self, value):
+        self.validate_xy(value, "x")
         self.__x = value
 
     @property
@@ -65,4 +76,37 @@ class Rectangle(Base):
 
     @y.setter
     def set_y(self, value):
+        self.validate_xy(value, "y")
         self.__y = value
+
+    def validate_wh(self, value, name):
+        """validate width or height of rectangle
+
+        Args:
+            value (int): width or height of rectangle
+            name (str): name of attribute
+
+        Raises:
+            TypeError: must be int
+            ValueError: must be > 0
+        """
+        if not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
+        if value < 1:
+            raise ValueError(f"{name} must be > 0")
+
+    def validate_xy(self, value, name):
+        """validate x or y attributes
+
+        Args:
+            value (int): x or y value
+            name (str): name of attribute
+
+        Raises:
+            TypeError: must be an interger
+            ValueError: must be >= 0
+        """
+        if not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
+        if value < 0:
+            raise ValueError(f"{name} must be >= 0")
