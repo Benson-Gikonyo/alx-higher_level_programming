@@ -13,10 +13,10 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ initiate Rectagle class
         """
-        self.__width = width
-        self._height = height
-        self.__x = x
-        self.__y = y
+        self.__width = self.set_width(width)
+        self._height = self.set_height(height)
+        self.__x = self.set_x(x)
+        self.__y = self.set_y(y)
         super().__init__(id)
 
     @property
@@ -28,7 +28,7 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def width(self, width):
+    def set_width(self, width):
         self.__width = width
 
     @property
@@ -40,7 +40,7 @@ class Rectangle(Base):
         return self.__height
 
     @height.setter
-    def height(self, height):
+    def set_height(self, height):
         self.__height = height
 
     @property
@@ -52,7 +52,7 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def x(self, x):
+    def set_x(self, x):
         self.__x = x
 
     @property
@@ -63,6 +63,6 @@ class Rectangle(Base):
         """
         return self.__y
 
-    @width.setter
-    def y(self, y):
+    @y.setter
+    def set_y(self, y):
         self.__y = y
