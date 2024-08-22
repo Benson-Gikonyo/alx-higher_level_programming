@@ -14,7 +14,7 @@ class Rectangle(Base):
         """ initiate Rectagle class
         """
         self.__width = self.set_width(width)
-        self._height = self.set_height(height)
+        self.__height = self.set_height(height)
         self.__x = self.set_x(x)
         self.__y = self.set_y(y)
         super().__init__(id)
