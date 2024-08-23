@@ -60,7 +60,7 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def set_x(self, value):
+    def x(self, value):
         self.validate_xy(value, "x")
         self.__x = value
 
@@ -73,7 +73,7 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def set_y(self, value):
+    def y(self, value):
         self.validate_xy(value, "y")
         self.__y = value
 
@@ -123,4 +123,3 @@ class Rectangle(Base):
             for num2 in range(self.__height):
                 print("#", end="")
             print()
-    
