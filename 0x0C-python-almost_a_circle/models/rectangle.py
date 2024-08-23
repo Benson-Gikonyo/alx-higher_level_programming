@@ -126,7 +126,6 @@ class Rectangle(Base):
             print(" " * self.__x, end="")
             print('#' * self.__width)
 
-
     def __str__(self):
         """ return a string representation of rectangle
 
