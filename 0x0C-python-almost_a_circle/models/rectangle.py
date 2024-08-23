@@ -9,6 +9,12 @@ class Rectangle(Base):
     Args:
         Base (class): parent class
     """
+    __width = None
+    __height = None
+    __x = None
+    __y = None
+    id = None
+    
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ initiate Rectangle class
@@ -125,3 +131,4 @@ class Rectangle(Base):
             for num2 in range(self.__height):
                 print("#", end="")
             print()
+    
