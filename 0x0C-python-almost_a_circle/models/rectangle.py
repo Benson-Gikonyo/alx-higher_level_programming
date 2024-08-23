@@ -9,12 +9,6 @@ class Rectangle(Base):
     Args:
         Base (class): parent class
     """
-    __width = None
-    __height = None
-    __x = None
-    __y = None
-    id = None
-    
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ initiate Rectangle class
@@ -35,14 +29,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """
-        @property :get width
-        @width.setter: set width
-        """
+        """get width"""
         return self.__width
 
     @width.setter
-    def set_width(self, value):
+    def width(self, value):
+        """set width"""
         self.validate_wh(value, "width")
         self.__width = value
 
