@@ -119,11 +119,19 @@ class Rectangle(Base):
     def display(self):
         """prints in stdout the Rectangle instance with the character #
         """
-        for num in range(self.__width):
-            for num2 in range(self.__height):
-                print("#", end="")
-            print()
-        print()
+        if self.__y:
+            for i in range(self.__y):
+                print()
+        for i in range(self.__height):
+            print(" " * self.__x, end="")
+            print('#' * self.__width)
+
 
     def __str__(self):
-        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+        """ return a string representation of rectangle
+
+        Returns:
+            string
+        """
+        string = f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        return (f"[Rectangle] ({self.id}) " + string)
