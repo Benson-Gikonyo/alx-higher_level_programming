@@ -47,7 +47,7 @@ class Rectangle(Base):
         return self.__height
 
     @height.setter
-    def set_height(self, value):
+    def height(self, value):
         self.validate_wh(value, "height")
         self.__height = value
 
