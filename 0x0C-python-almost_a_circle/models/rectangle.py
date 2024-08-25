@@ -136,6 +136,11 @@ class Rectangle(Base):
         return (f"[Rectangle] ({self.id}) " + string)
 
     def update(self, *args):
+        """assigns an argument to each attribute:
+
+        Args:
+            *args: non keyword command line arguments
+        """
         attr_list = ["id", "__width", "__height", '__x', '__y']
         if args and len(args) > 1:
             for num in range(len(args)):
