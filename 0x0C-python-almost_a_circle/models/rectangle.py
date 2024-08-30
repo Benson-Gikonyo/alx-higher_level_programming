@@ -144,13 +144,13 @@ class Rectangle(Base):
         attr_list = ["id", "__width", "__height", '__x', '__y']
         if args and len(args) > 1:
             for num in range(len(args)):
+                if num == 0:
+                    self.id = args[num]
                 if num == 1:
-                    self.id = args[1]
+                    self.width = args[num]
                 if num == 2:
-                    self.width = args[2]
+                    self.height = args[num]
                 if num == 3:
-                    self.height = args[3]
+                    self.x = args[num]
                 if num == 4:
-                    self.x = args[4]
-                if num == 5:
-                    self.y = args[5]
+                    self.y = args[num]
