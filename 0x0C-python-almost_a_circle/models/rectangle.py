@@ -8,6 +8,10 @@ class Rectangle(Base):
 
     Args:
         Base (class): parent class
+        width (int): width of rectangle
+        height (int): height of rectangle
+        x (int): x coordinate
+        y (int): y coordinate
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):

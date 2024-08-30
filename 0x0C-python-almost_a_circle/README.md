@@ -20,3 +20,5 @@ Task 7: Update the class Rectangle by improving the public method def display(se
 Task 8: Update the class Rectangle by adding the public method def update(self, *args): that assigns an argument to each attribute
 
 Task 9: Update the class Rectangle by updating the public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes
+
+Task 10: Write the class Square that inherits from Rectangle

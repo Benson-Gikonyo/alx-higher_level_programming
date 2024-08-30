@@ -4,6 +4,8 @@
 
 class Base:
     """Base class
+    Args:
+        id (int): Identifier
     """
     __nb_objects = 0
 
