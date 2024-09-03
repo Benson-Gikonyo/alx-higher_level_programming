@@ -28,3 +28,5 @@ Task 11: Update the class Square by adding the public method def update(self, *a
 Task 12: Update the class Square by adding the public method def update(self, *args, **kwargs)
 
 Task 13: Update the class Rectangle by adding the public method def to_dictionary(self)
+
+Task 14: Update the class Square by adding the public method def to_dictionary(self)
