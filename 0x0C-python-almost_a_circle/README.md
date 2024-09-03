@@ -30,3 +30,5 @@ Task 12: Update the class Square by adding the public method def update(self, *a
 Task 13: Update the class Rectangle by adding the public method def to_dictionary(self)
 
 Task 14: Update the class Square by adding the public method def to_dictionary(self)
+
+Task 15: Update the class Base by adding the static method def to_json_string(list_dictionaries): that returns the JSON string representation of list_dictionaries
