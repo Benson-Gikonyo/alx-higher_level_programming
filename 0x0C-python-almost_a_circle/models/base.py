@@ -54,3 +54,18 @@ class Base:
         with open(filename, "w") as f:
             f.write(string)
             f.close()
+
+    @staticmethod
+    def from_json_string(json_string=None):
+        """that returns the list of the JSON string representation json_string
+
+        Args:
+            json_string (str): JSON string representation
+
+        Return: list
+        """
+        if json_string is None or len(json_string) == 0:
+            return []
+
+        else:
+            return json.loads(json_string)
