@@ -26,3 +26,5 @@ Task 10: Write the class Square that inherits from Rectangle
 Task 11: Update the class Square by adding the public method def update(self, *args, **kwargs)
 
 Task 12: Update the class Square by adding the public method def update(self, *args, **kwargs)
+
+Task 13: Update the class Rectangle by adding the public method def to_dictionary(self)
