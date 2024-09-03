@@ -172,5 +172,10 @@ class Rectangle(Base):
                     self.y = kwargs[kw]
 
     def to_dictionary(self):
+        """returns dictionary representation of rectangle
+
+        Returns:
+            dict: dictionary representation of rectangle
+        """
         return {"id": self.id, "width": self.__width,
                 "height": self.__height, "x": self.__x, "y": self.__y}
