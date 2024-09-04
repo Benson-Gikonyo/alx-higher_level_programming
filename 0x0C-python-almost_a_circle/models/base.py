@@ -73,7 +73,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """returns an instance with all attributes already set
-        Args: 
+        Args:
         """
         if cls.__name__ == "Rectangle":
             instance = cls(1, 1, 0, 0)
@@ -95,9 +95,12 @@ class Base:
             return []
 
         filename = cls.__name__ + ".json"
-        with open(filename, 'r') as f:
-            list_repr = cls.from_json_string(f.read())
-            instances = [cls.create(**repr) for repr in list_repr]
-            f.close()
+        try:
+            with open(filename, 'r') as f:
+                list_repr = cls.from_json_string(f.read())
+                instances = [cls.create(**repr) for repr in list_repr]
+                f.close()
+        except FileNotFoundError:
+            pass
 
         return instances
