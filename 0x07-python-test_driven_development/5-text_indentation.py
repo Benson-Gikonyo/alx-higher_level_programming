@@ -21,11 +21,13 @@ def text_indentation(text):
         raise TypeError("text_indentation() missing 1 \
             required positional argument: 'text'")
 
-    text = text.strip()
+    if len(text) == 0:
+        print(text)
+
     char = 0
     while char < len(text) and text[char] == ' ':
         char += 1
-    
+
     while char < len(text):
         print(text[char], end="")
         if text[char] == "\n" or text[char] in ".?:":
