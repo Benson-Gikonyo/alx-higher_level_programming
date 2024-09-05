@@ -15,7 +15,6 @@ def text_indentation(text):
 
     if type(text) is not str:
         raise TypeError("text must be a string")
-    print("Fail")
 
     if text is None:
         raise TypeError("text_indentation() missing 1 \
