@@ -22,7 +22,7 @@ Testing for text being a non-string type:
 
 ::
 
-    >>> text_indentation(Nan)
+    >>> text_indentation(float('nan'))
     Traceback (most recent call last):
     TypeError: text must be a string
 
@@ -34,5 +34,3 @@ Testing for missing text:
 
 Testing for empty string:
     >>> text_indentation("")
-    Traceback (most recent call last):
-    TypeError: text_indentation() missing 1 required positional argument: 'text'

@@ -21,7 +21,7 @@ def text_indentation(text):
             required positional argument: 'text'")
 
     if len(text) == 0:
-        print(text)
+        return
 
     char = 0
     while char < len(text) and text[char] == ' ':
