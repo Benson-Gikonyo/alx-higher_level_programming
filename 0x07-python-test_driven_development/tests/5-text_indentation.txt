@@ -14,6 +14,19 @@ Testing for text being a non-string type:
     Traceback (most recent call last):
     TypeError: text must be a string
 
+::
+
+    >>> text_indentation({"one": 5, "two": 6})
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+::
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+
 Testing for missing text:
     >>> text_indentation()
     Traceback (most recent call last):
