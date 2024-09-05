@@ -19,3 +19,5 @@ Task 3: Write a function that prints a square with the character #.
 Task 4: Write a function that prints a text with 2 new lines after each of these characters: ., ? and :
 
     Prototype: def text_indentation(text):
+
+Task 5: write unittests for the function def max_integer(list=[])
