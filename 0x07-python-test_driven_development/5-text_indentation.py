@@ -13,17 +13,18 @@ def text_indentation(text):
     Return: Nothing
     """
 
-    if not isinstance(text, str):
+    if type(text) is not str:
         raise TypeError("text must be a string")
 
     if text is None:
         raise TypeError("text_indentation() missing 1 \
             required positional argument: 'text'")
 
+    text = text.strip()
     char = 0
     while char < len(text) and text[char] == ' ':
         char += 1
-
+    
     while char < len(text):
         print(text[char], end="")
         if text[char] == "\n" or text[char] in ".?:":
