@@ -13,7 +13,7 @@ def text_indentation(text):
     Return: Nothing
     """
 
-    if type(text) is not str or len(str) == 0:
+    if type(text) is not str:
         raise TypeError("text must be a string")
 
     if text is None:

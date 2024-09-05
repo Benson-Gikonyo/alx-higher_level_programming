@@ -34,5 +34,5 @@ Testing for missing text:
 
 Testing for empty string:
     >>> text_indentation("")
-     Traceback (most recent call last):
-    TypeError: text must be a string
+
+
