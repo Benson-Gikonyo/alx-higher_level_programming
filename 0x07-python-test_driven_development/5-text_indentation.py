@@ -13,15 +13,12 @@ def text_indentation(text):
     Return: Nothing
     """
 
-    if type(text) is not str:
+    if type(text) is not str or len(str) == 0:
         raise TypeError("text must be a string")
 
     if text is None:
         raise TypeError("text_indentation() missing 1 \
             required positional argument: 'text'")
-
-    if len(text) == 0:
-        return
 
     char = 0
     while char < len(text) and text[char] == ' ':
