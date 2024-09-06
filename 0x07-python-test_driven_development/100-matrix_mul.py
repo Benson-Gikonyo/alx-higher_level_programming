@@ -49,10 +49,12 @@ def matrix_mul(m_a, m_b):
         raise TypeError("m_b must be a list")
 
     # are nested lists
-    if not (isinstance(m_a[row], list) for row in m_a):
-        raise TypeError("m_a must be a list of lists")
-    if not (isinstance(m_a[row], list) for row in m_b):
-        raise TypeError("m_b must be a list of lists")
+    for row in m_a:
+        if type([row]) is not list:
+            raise TypeError("m_a must be a list of lists")
+    for row in m_b:
+        if type([row]) is not list:
+            raise TypeError("m_b must be a list of lists")
 
     # are empty lists
     if m_a == []:
@@ -81,13 +83,14 @@ def matrix_mul(m_a, m_b):
     expected_row_size_1 = len(m_a[0])
     expected_row_size_2 = len(m_b[0])
 
-    if any(len(row) != expected_row_size_1 for row in m_a):
-        raise TypeError("Each row of m_a must have the same size")
+    for row in m_a:
+        if len(row) != expected_row_size_1:
+            raise TypeError("Each row of m_a must have the same size")
 
-    if any(len(row) != expected_row_size_2 for row in m_b):
-        raise TypeError("Each row of m_b must have the same size")
+    for row in m_b:
+        if len(row) != expected_row_size_2:
+            raise TypeError("Each row of m_b must have the same size")
 
-    # m_a and m_b can be multiplied:
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
