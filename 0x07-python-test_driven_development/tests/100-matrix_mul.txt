@@ -1,0 +1,25 @@
+The ``100-matrix_mul`` module
+===============================
+This module has the function ``def matrix_mul(m_a, m_b)``.
+
+``matrix_mul`` function
+===============================
+This function multiplies 2 matrices:
+
+Importing function from the module:
+    >>> text_indentation = __import__('100-matrix_mul').matrix_mul
+
+
+Testing m_a and m_b are both type lists
+
+Testing m_a and m_b are both nested lists
+
+m_a and m_b are not empty lists
+
+all elements of m_a and m_b are types int or float
+
+all rows of m_a are same size
+
+all rows of m_b are same size
+
+size of columns of m_a is equal to size of rows of m_b (possibility of multiplication)
