@@ -7,7 +7,7 @@ This module has the function ``def matrix_mul(m_a, m_b)``.
 This function multiplies 2 matrices:
 
 Importing function from the module and setting up matrices a and b:
-    >>> text_indentation = __import__('100-matrix_mul').matrix_mul
+    >>> matrix_mul =  text_indentation = __import__('100-matrix_mul').matrix_mul
 
 Testing m_a and m_b are both  lists
     >>> a = [[1, 2], [3, 4]] 
@@ -49,7 +49,7 @@ Testing m_a and m_b are both nested lists
     >>> b = [1, 2, 3, 4]
     >>> matrix_mul(a, b)
     Traceback (most recent call last):
-    TypeError: m_a must be a list of lists
+    TypeError: m_b must be a list of lists
 
 Testing m_a and m_b are not empty lists
     >>> a = [[1, 2], [3, 4]] 
@@ -59,7 +59,7 @@ Testing m_a and m_b are not empty lists
 
 ::
 
-    >>> a = [[], []] 
+    >>> a = [] 
     >>> b = [[1, 2], [3, 4]]
     >>> matrix_mul(a, b)
     Traceback (most recent call last):
@@ -93,7 +93,7 @@ Testing all elements of m_a and m_b are types int or float
     >>> b = [[1, 2], None]
     >>> matrix_mul(a, b)
     Traceback (most recent call last):
-    TypeError: m_a should contain only integers or floats
+    TypeError: m_b should contain only integers or floats
 
 
 Testing all rows  are same size
@@ -126,16 +126,8 @@ Testing size of columns of m_a is equal to size of rows of m_b (possibility of m
 
 ::
 
-    >>> a = [[1, 2, 3], [3, 4]] 
+    >>> a = [[1, 2,  3], [3, 4, 3]] 
     >>> b = [[1, 2], [3, 4]]
-    >>> matrix_mul(a, b)
-    Traceback (most recent call last):
-    ValueError: "m_a and m_b can't be multiplied"
-    
-::
-
-    >>> a = [[1, 2], [3, 4]] 
-    >>> b = [[1, 2], [3, 4, 5]]
     >>> matrix_mul(a, b)
     Traceback (most recent call last):
     ValueError: "m_a and m_b can't be multiplied"
