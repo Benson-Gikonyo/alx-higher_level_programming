@@ -63,7 +63,7 @@ Testing m_a and m_b are not empty lists
     >>> b = [[1, 2], [3, 4]]
     >>> matrix_mul(a, b)
     Traceback (most recent call last):
-    ValueError: m_a can't be empty   
+    ValueError: m_a can't be empty
 
 ::
 
@@ -90,11 +90,10 @@ Testing all elements of m_a and m_b are types int or float
 ::
 
     >>> a = [[1, 2], [3, 4]] 
-    >>> b = [[1, 2], None]
+    >>> b = [[1, 2], [None]]
     >>> matrix_mul(a, b)
     Traceback (most recent call last):
     TypeError: m_b should contain only integers or floats
-
 
 Testing all rows  are same size
     >>> a = [[1, 2], [3, 4]] 
@@ -130,4 +129,4 @@ Testing size of columns of m_a is equal to size of rows of m_b (possibility of m
     >>> b = [[1, 2], [3, 4]]
     >>> matrix_mul(a, b)
     Traceback (most recent call last):
-    ValueError: "m_a and m_b can't be multiplied"
+    ValueError: m_a and m_b can't be multiplied
