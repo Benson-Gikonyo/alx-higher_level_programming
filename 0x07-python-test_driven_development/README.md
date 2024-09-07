@@ -23,3 +23,5 @@ Task 4: Write a function that prints a text with 2 new lines after each of these
 Task 5: write unittests for the function def max_integer(list=[])
 
 Task 6: Write a function that multiplies 2 matrices
+
+Task 7: Write a function that multiplies 2 matrices by using the module NumPy
