@@ -68,7 +68,7 @@ class Square():
                 not all(isinstance(num, int) for num in value) or\
                 not all(num >= 0 for num in value):
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position= value
+        self.__position = value
 
     def area(self):
         """calculates area of square
