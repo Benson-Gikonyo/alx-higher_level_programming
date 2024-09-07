@@ -6,20 +6,136 @@ This module has the function ``def matrix_mul(m_a, m_b)``.
 ===============================
 This function multiplies 2 matrices:
 
-Importing function from the module:
+Importing function from the module and setting up matrices a and b:
     >>> text_indentation = __import__('100-matrix_mul').matrix_mul
 
+Testing m_a and m_b are both  lists
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    [[7, 10], [15, 22]]
 
-Testing m_a and m_b are both type lists
+::
+    >>> a = "str"
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    TypeError: m_a must be a list
+
+::
+    >>> a = [[1, 2], [3.4]] 
+    >>> b = "str"
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    TypeError: m_b must be a list
 
 Testing m_a and m_b are both nested lists
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    [[7, 10], [15, 22]]
 
-m_a and m_b are not empty lists
+::
 
-all elements of m_a and m_b are types int or float
+    >>> a = [1, 2, 3, 4] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    TypeError: m_a must be a list of lists
 
-all rows of m_a are same size
+::
 
-all rows of m_b are same size
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [1, 2, 3, 4]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    TypeError: m_a must be a list of lists
 
-size of columns of m_a is equal to size of rows of m_b (possibility of multiplication)
+Testing m_a and m_b are not empty lists
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    [[7, 10], [15, 22]]
+
+::
+
+    >>> a = [[], []] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    ValueError: m_a can't be empty   
+
+::
+
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = []
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    ValueError: m_b can't be empty
+
+Testing all elements of m_a and m_b are types int or float
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    [[7, 10], [15, 22]]
+
+::
+
+    >>> a = [[1, "str"], [3, 4]] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    TypeError: m_a should contain only integers or floats
+
+::
+
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [[1, 2], None]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    TypeError: m_a should contain only integers or floats
+
+
+Testing all rows  are same size
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    [[7, 10], [15, 22]]
+
+::
+
+    >>> a = [[1, 2, 3], [3, 4]] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    TypeError: each row of m_a must be of the same size
+
+::
+
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [[1, 2], [3, 4, 5]]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    TypeError: each row of m_b must be of the same size
+
+Testing size of columns of m_a is equal to size of rows of m_b (possibility of multiplication)
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    [[7, 10], [15, 22]]
+
+::
+
+    >>> a = [[1, 2, 3], [3, 4]] 
+    >>> b = [[1, 2], [3, 4]]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    ValueError: "m_a and m_b can't be multiplied"
+    
+::
+
+    >>> a = [[1, 2], [3, 4]] 
+    >>> b = [[1, 2], [3, 4, 5]]
+    >>> matrix_mul(a, b)
+    Traceback (most recent call last):
+    ValueError: "m_a and m_b can't be multiplied"
