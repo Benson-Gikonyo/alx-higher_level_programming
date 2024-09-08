@@ -103,7 +103,7 @@ class Square():
                 print("")
         for num in range(0, self.__size):
             for num2 in range(0, self.__position[0]):
-                print (" ", end="")
+                print(" ", end="")
             for num3 in range(0, self.__size):
                 print("#", end="")
             if num != self.__size - 1:
