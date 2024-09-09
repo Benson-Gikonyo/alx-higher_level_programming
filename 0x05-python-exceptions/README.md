@@ -17,4 +17,8 @@ Task 6: Write a function that raises a name exception with a message.
 
 Task 7: Write a function that prints an integer.
 
-    Prototype: def safe_print_integer_err(value):
+    Prototype: def safe_print_integer_err(value)
+
+Task 8: Write a function that executes a function safely.
+
+    Prototype: def safe_function(fct, *args)
