@@ -9,12 +9,12 @@ def list_division(my_list_1, my_list_2, list_length):
         list_length (_type_): can contain elements of any type
     """
     new_list = []
-    
+
     for num in range(list_length):
         answer = 0
         try:
             answer = my_list_1[num] / my_list_2[num]
-        except(TypeError, ValueError):
+        except (TypeError, ValueError):
             print("wrong type")
             division = 0
         except ZeroDivisionError:
@@ -26,4 +26,3 @@ def list_division(my_list_1, my_list_2, list_length):
         finally:
             new_list.append(answer)
     return (new_list)
-    
