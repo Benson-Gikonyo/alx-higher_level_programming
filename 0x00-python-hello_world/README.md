@@ -36,3 +36,7 @@ Task 9: Write a Python script that prints “The Zen of Python”, by TimPeters,
     Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
 
 Task 11: Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line. use the function write from the sys module. print to stderr, and exit with status 1
+
+Task 12: Write a script that compiles a Python script file.
+
+The Python file name will be stored in the environment variable $PYFILE
