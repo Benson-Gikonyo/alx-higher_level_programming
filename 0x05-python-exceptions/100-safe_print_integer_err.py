@@ -8,13 +8,9 @@ def safe_print_integer_err(value):
         value (any type ):value to be printed
     """
     try:
-        if value.is_interger() ==  True:
-            print("{:d}".format())
-            return True
-        else:
-            raise Exception
-            
- 
-    except Exception:
+        print("{:d}".format(value))
+        return True  
+
+    except (TypeError, ValueError) as e:
+        sys.stderr.write("Exception: {}\n".format(e))
         return False
-        sys.stderr.write("Unknown format code 'd' for object of type 'str'\n")
