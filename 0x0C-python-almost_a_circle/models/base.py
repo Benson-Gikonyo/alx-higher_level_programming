@@ -103,3 +103,24 @@ class Base:
             pass
 
         return instances
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """returns a list of instances fro CSV file.
+            Args:
+                cls: csv file
+        """
+        filename = cls.__name__ + ".csv"
+        results = []
+        try:
+            with open(filename, 'r') as f:
+                reader = csv.reader(f)
+                for row in reader:
+                    results.append(cls.create_from_csv_row(row))
+        except FileNotFoundError:
+            pass
+        return results
+
+    def to_csv_row(self):
+        """Returns a CSV row"""
+        raise NotImplementedError("to_csv_row method must be implemented")

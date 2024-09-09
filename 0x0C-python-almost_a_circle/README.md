@@ -32,3 +32,5 @@ Task 13: Update the class Rectangle by adding the public method def to_dictionar
 Task 14: Update the class Square by adding the public method def to_dictionary(self)
 
 Task 15: Update the class Base by adding the static method def to_json_string(list_dictionaries): that returns the JSON string representation of list_dictionaries
+
+Task 16: Update the class Base by adding the class methods def save_to_file_csv(cls, list_objs): and def load_from_file_csv(cls): that serializes and deserializes in CSV:
