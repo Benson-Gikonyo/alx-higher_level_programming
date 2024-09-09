@@ -91,8 +91,7 @@ class Base:
         Args:
             cls: file
         """
-        if cls is None:
-            return []
+        instances = []
 
         filename = cls.__name__ + ".json"
         try:
