@@ -161,6 +161,4 @@ class Rectangle():
 
         return: instance of rectangle
         """
-        sq = cls(size, size)
-
-        return sq
+        return cls(size, size)
