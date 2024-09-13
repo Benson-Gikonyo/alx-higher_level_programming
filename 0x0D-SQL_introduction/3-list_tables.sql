@@ -1,2 +1,2 @@
---list tables
+--list tables of a database
 SHOW TABLES;
