@@ -26,3 +26,5 @@ Task 7: Write a script that inserts a new row in the table first_table (database
 Task 8: Write a script that displays the number of records with id = 89 in the table first_table of the database hbtn_0c_0 in your MySQL server.
 
 Task 9: Write a script that creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.
+
+Task 10: Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
