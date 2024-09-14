@@ -1,2 +1,2 @@
---list all records of secondtable grouped by score in alphabetical order
-SELECT `score`, `name` FROM `second_table` ORDER BY `score` DESC;
+-- display both the score and the name
+SELECT `score`,`name` FROM `second_table` ORDER BY `score` DESC;
