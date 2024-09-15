@@ -30,3 +30,5 @@ Task 9: Write a script that creates a table second_table in the database hbtn_0c
 Task 10: Write a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
 
 Task 11: Write a script that lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server.
+
+Task 12: Write a script that updates the score of Bob to 10 in the table second_table.
