@@ -44,3 +44,6 @@ Task 16: Write a script that lists all records of the table second_table of the 
 Task 17: Write a script that converts hbtn_0c_0 database to UTF8 (utf8mb4, collate utf8mb4_unicode_ci) in your MySQL server.
 
 Task 18: Import in hbtn_0c_0 database this table dump: download
+        Write a script that displays the average temperature (Fahrenheit) by city ordered by temperature (descending).
+
+Task 19: Write a script that displays the top 3 of cities temperature during July and August ordered by temperature (descending)
