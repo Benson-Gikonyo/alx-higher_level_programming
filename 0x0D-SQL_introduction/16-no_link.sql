@@ -1,4 +1,4 @@
 --lists all records of the table second_table
 SELECT `score`, `name` FROM `second_table`
-where `name` IS NOT NULL
+where `name` != ""
 ORDER BY `score` DESC;
