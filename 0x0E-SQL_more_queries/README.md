@@ -32,3 +32,5 @@ Task 12: Write a script that lists all shows contained in hbtn_0d_tvshows withou
 Task 13: Write a script that lists all genres from hbtn_0d_tvshows and displays the number of shows linked to each.
 
 Task 14: Write a script that uses the hbtn_0d_tvshows database to lists all genres of the show Dexter.
+
+Task 15: Write a script that lists all Comedy shows in the database hbtn_0d_tvshows.
