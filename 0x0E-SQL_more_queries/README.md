@@ -40,3 +40,5 @@ Task 16: Write a script that lists all shows, and all genres linked to that show
 Task 17: Write a script that uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter
 
 Task 18: Write a script that lists all shows without the genre Comedy in the database hbtn_0d_tvshows.
+
+Task 20: Write a script that lists all genres in the database hbtn_0d_tvshows_rate by their rating.
