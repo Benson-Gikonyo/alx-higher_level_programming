@@ -9,3 +9,5 @@ Task 2: Write a script that creates the database hbtn_0d_2 and the user user_0d_
 Task 3: Write a script that creates the table force_name on your MySQL server.
 
 Task 4: Write a script that creates the table id_not_null on your MySQL server.
+
+Task 5: Write a script that creates the table unique_id on your MySQL server.
