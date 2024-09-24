@@ -20,4 +20,8 @@ Task 8: Write a script that lists all the cities of California that can be found
 
 Task 9: script that lists all cities contained in the database hbtn_0d_usa.
 
+
+Task 10: mport the database dump from hbtn_0d_tvshows to your MySQL server: download
+
+Write a script that lists all shows contained in hbtn_0d_tvshows that have at least one genre linked.
         
