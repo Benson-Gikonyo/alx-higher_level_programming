@@ -28,3 +28,5 @@ Write a script that lists all shows contained in hbtn_0d_tvshows that have at le
 Task 11: Write a script that lists all shows contained in the database hbtn_0d_tvshows. 
 
 Task 12: Write a script that lists all shows contained in hbtn_0d_tvshows without a genre linked. 
+
+Task 13: Write a script that lists all genres from hbtn_0d_tvshows and displays the number of shows linked to each.
