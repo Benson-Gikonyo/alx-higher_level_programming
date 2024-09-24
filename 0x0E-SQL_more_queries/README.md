@@ -13,3 +13,7 @@ Task 4: Write a script that creates the table id_not_null on your MySQL server.
 Task 5: Write a script that creates the table unique_id on your MySQL server.
 
 Task 6: Write a script that creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa) on your MySQL server.
+
+Task 7: Write a script that creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa) on your MySQL server.
+
+Task 8: Write a script that lists all the cities of California that can be found in the database hbtn_0d_usa.
