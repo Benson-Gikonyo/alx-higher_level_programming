@@ -26,3 +26,5 @@ Task 10: mport the database dump from hbtn_0d_tvshows to your MySQL server: down
 Write a script that lists all shows contained in hbtn_0d_tvshows that have at least one genre linked.
         
 Task 11: Write a script that lists all shows contained in the database hbtn_0d_tvshows. 
+
+Task 12: Write a script that lists all shows contained in hbtn_0d_tvshows without a genre linked. 
